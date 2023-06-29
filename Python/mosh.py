@@ -33,3 +33,15 @@ print('Hi ' + name)
 name = input('What is your name? ')
 colour = input('Whats your favourite colour? ')
 print(name + ' likes ' + colour)
+
+# when we want to use the maths, you cannot take an int from a str, the string needs to be changed to an integer, or int
+birth_year = input('What is your birth year? ')
+age = 2023 - int(birth_year)
+print(age)
+# you can use the type function by typing (type)
+print(type(age))
+
+# challenge: gather a weight input, then to convert into pounds, so using the input, converting into int then times by 2.2
+weight = input('What is your weight in kg? ')
+pounds = int(weight) * 2.2
+print(pounds)
