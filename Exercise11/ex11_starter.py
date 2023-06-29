@@ -26,3 +26,9 @@ print('-' * length)
 print("Population of Belgium: ", pop_belgium)
 print("Population of Brussels: ", pop_brussels)
 print("Total Population: ", total_pop)
+
+for x in Belgium:
+    if x.isnumeric():
+            Belgium.replace(x, '-')
+
+print(x)
