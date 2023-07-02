@@ -4,6 +4,10 @@ cheese += 'Oke'
 # Answer, this will add the OKE to the end of this tuple. the += operator is an addition, this string should read: ['Cheddar', 'Stilton', 'Cornish Yarg', 'O', 'k', 'e']
 print(cheese)
 
+# to add two new cheeses to the list in a single commands I could use
+cheese.extend(['Brie', 'Red Leicester'])
+print(cheese)
+
 # Question 2: what is going on here? can you explain the output?
 tup = 'Hello'
 print(len(tup))
@@ -11,7 +15,7 @@ print(len(tup))
 
 tup = 'Hello',
 print(len(tup))
-# witht he addition of the , this is now counting the amount of words within the tuple, below is I add more words it, it should print how many words there are
+# with the addition of the , this is now counting the amount of words within the tuple, below is I add more words it, it should print how many words there are
 
 tup = 'Hello', 'world', 'nice', 'to', 'meet', 'you'
 print(len(tup))

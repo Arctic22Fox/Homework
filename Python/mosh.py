@@ -45,3 +45,4 @@ print(type(age))
 weight = input('What is your weight in kg? ')
 pounds = int(weight) * 2.2
 print(pounds)
+
