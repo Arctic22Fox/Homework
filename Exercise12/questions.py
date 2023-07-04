@@ -4,6 +4,10 @@ cheese += 'Oke'
 # Answer, this will add the OKE to the end of this tuple. the += operator is an addition, this string should read: ['Cheddar', 'Stilton', 'Cornish Yarg', 'O', 'k', 'e']
 print(cheese)
 
+cheese = ['Chedder', 'Stilton', 'Cornish Yarg']
+cheese.append('Oke')
+print(cheese)
+
 # to add two new cheeses to the list in a single commands I could use
 cheese.extend(['Brie', 'Red Leicester'])
 print(cheese)
