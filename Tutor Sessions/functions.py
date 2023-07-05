@@ -78,3 +78,23 @@ def factorial(num):
 
 number = 6
 print('the factorial of ' + str(number) + ' is ' + str(factorial(6)))
+
+# variable visibilty in functions
+
+result = 3
+
+def scope_test1():
+    result = 42
+
+scope_test1()
+print(result)
+
+
+def scope_test2():
+    global result
+    result = 42
+
+
+scope_test2()
+print(result)
+

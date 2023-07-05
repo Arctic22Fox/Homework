@@ -15,15 +15,15 @@ def get_computer_choice():
     return random.choice(choices)
 
 # Function to determine the winner
-def determine_winner(user_choice, computer_choice):
-    if user_choice == computer_choice:
+def determine_winner(user, computer):
+    if user == computer:
         return "It's a tie!"
     # Check the winning conditions for the user
-    elif (user_choice == 'rock' and (computer_choice == 'scissors' or computer_choice == 'lizard')) or \
-         (user_choice == 'paper' and (computer_choice == 'rock' or computer_choice == 'Spock')) or \
-         (user_choice == 'scissors' and (computer_choice == 'paper' or computer_choice == 'lizard')) or \
-         (user_choice == 'lizard' and (computer_choice == 'paper' or computer_choice == 'Spock')) or \
-         (user_choice == 'spock' and (computer_choice == 'rock' or computer_choice == 'scissors')):
+    elif (user == 'rock' and (computer == 'scissors' or computer == 'lizard')) or \
+         (user == 'paper' and (computer == 'rock' or computer == 'Spock')) or \
+         (user == 'scissors' and (computer == 'paper' or computer == 'lizard')) or \
+         (user == 'lizard' and (computer == 'paper' or computer == 'Spock')) or \
+         (user == 'spock' and (computer == 'rock' or computer == 'scissors')):
         return "You win!"
     # If the above conditions are not met, computer wins
     else:
@@ -48,3 +48,4 @@ def play_game():
 
 # Start the game
 play_game()
+
