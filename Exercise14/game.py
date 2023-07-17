@@ -37,12 +37,20 @@ def play_again():
 # Function to play the game
 def play_game():
     print("Let's play Rock-Paper-Scissors-Lizard-Spock!")
+    user_score = 0
+    computer_score = 0
     while True:
         user_choice = get_user_choice() # Get user's choice
         computer_choice = get_computer_choice() # Get computer's choice
         print(f"\nYou chose: {user_choice}")
         print(f"Computer chose: {computer_choice}")
-        print(determine_winner(user_choice, computer_choice)) # Determine the winner
+        result = determine_winner(user_choice, computer_choice) # Determine the winner
+        print(result)
+        if result == "You win!":
+            user_score += 1
+        elif result == "Computer wins!":
+            computer_score += 1
+        print(f"Score - You: {user_score}, Computer: {computer_score}")
         if not play_again():
             break
 
